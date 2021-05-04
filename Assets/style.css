@@ -1,19 +1,21 @@
+/* setting color variables */
 :root {
     --colorText: #ffffff;
     --colorHeader: #2a607c;
     --colorBackground: #d9dcd6;
     --colorMain1: #0072bb;
     --colorMain2: #2589bd;  
+    --colorNull: #0f374d; 
 
 }
-
+/*universal styles*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/*begin header properties*/
 #header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -45,23 +47,14 @@
     text-align: center;
 }
 
-body {
-    background-color: var(--colorBackground);
-}
-
-body.noImages img {
-    display: none;
-}
 a {
     color: var(--colorText);
     text-decoration: none;
     margin-left: 25px;
 }
+/*end header properties*/
 
-p {
-    font-size: 16px;
-}
-
+/*this class modifies the cover picture*/
 .hero {
     width: 100%;
     margin-bottom: 25px;
@@ -70,6 +63,18 @@ p {
 }
 
 /* Begin Main Content*/
+body {
+    background-color: var(--colorBackground);
+}
+
+body.noImages img {
+    display: none;
+}
+
+p {
+    font-size: 16px;
+}
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -84,6 +89,10 @@ p {
     display: flex;
 }
 
+.flexDown {
+    flex-direction: column;
+}
+
 #content {
     width: 75%;
     display: flex;
@@ -96,7 +105,6 @@ p {
     padding: 50px; 
     background-color:var(--colorMain1);
     color:var(--colorText);
-  
 }
 
 .paragraph img {
@@ -126,10 +134,6 @@ button {
     align-items: center;
     color:var(--colorText);
 
-}
-
-.flexDown {
-    flex-direction: column;
 }
 /* End Main Content */
 
