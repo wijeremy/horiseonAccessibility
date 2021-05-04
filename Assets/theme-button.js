@@ -2,13 +2,6 @@ document.getElementById('noImages').addEventListener('click', function () {
     document.body.classList.toggle('noImages');
 }); 
 
-/*
---colorText: #ffffff;
-    --colorHeader: #2a607c;
-    --colorBackground: #d9dcd6;
-    --colorMain1: #0072bb;
-    --colorMain2: #2589bd
-    */
 document.getElementById('darkMode').addEventListener('click', function () {
     document.documentElement.style.setProperty("--colorBackground", "#222222")
     document.documentElement.style.setProperty("--colorHeader", "#102c3a")
