@@ -12,6 +12,13 @@
     display: flex;
 }
 
+@media screen and (max-width: 760px) {
+    div {
+        flex-direction: column;
+    }
+    
+}
+
 .header h1 {
     font-size: 48px;
 }
@@ -26,7 +33,7 @@
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-
+    text-align: center;
 }
 
 body {
@@ -37,9 +44,6 @@ a {
     color: #ffffff;
     text-decoration: none;
     margin-left: 25px;
-    border: #ffffff;
-    border-width: 1px;
-    border-style: solid;
 }
 
 p {
