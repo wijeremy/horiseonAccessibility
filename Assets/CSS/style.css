@@ -4,23 +4,19 @@
     margin: 0;
 }
 
-body {
-    background-color: #d9dcd6;
-}
-
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    display: flex;
 }
 
 .header h1 {
-    display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+.seo {
     color: #d9dcd6;
 }
 
@@ -30,20 +26,20 @@ body {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+
 }
 
-.header div ul {
-    list-style-type: none;
-}
-
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+body {
+    background-color: #d9dcd6;
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
+    margin-left: 25px;
+    border: #ffffff;
+    border-width: 1px;
+    border-style: solid;
 }
 
 p {
@@ -51,13 +47,13 @@ p {
 }
 
 .hero {
-    height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-size: cover;
     background-position: center;
 }
 
+/* Begin Main Content*/
 .float-left {
     float: left;
     margin-right: 25px;
@@ -72,7 +68,6 @@ p {
     display: flex;
 }
 
-/* Begin Main Content*/
 .content {
     width: 75%;
     display: flex;
