@@ -4,9 +4,18 @@
     --colorHeader: #2a607c;
     --colorBackground: #d9dcd6;
     --colorMain1: #0072bb;
-    --colorMain2: #2589bd;  
-    --colorNull: #0f374d; 
+    --colorMain2: #2589bd; 
+    --black: #000 
+}
 
+/*This class applies a Dark Mode to the site*/
+.darkMode {
+    --colorText: #f3e3b6;
+    --colorHeader: #102c3a;
+    --colorBackground: #222222;
+    --colorMain1: #003150;
+    --colorMain2: #0f374d; 
+    --black: #f3e3b6;
 }
 /*universal styles*/
 * {
@@ -24,13 +33,13 @@
     display: flex;
 }
 
-@media screen and (max-width: 760px) {
-    div {
+@media screen and (max-width: 750px) {
+    #header {
         flex-direction: column;
+        align-items: flex-start;
     }
     
 }
-
 #header h1 {
     font-size: 48px;
 }
@@ -65,6 +74,9 @@ a {
 /* Begin Main Content*/
 body {
     background-color: var(--colorBackground);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 body.noImages img {
@@ -89,6 +101,13 @@ p {
     display: flex;
 }
 
+@media screen and (max-width: 750px) {
+    .flexBox {
+        flex-direction: column;
+    }
+    
+}
+
 .flexDown {
     flex-direction: column;
 }
@@ -98,6 +117,14 @@ p {
     display: flex;
     margin-left: 20px;
     flex-direction: column;
+}
+
+@media screen and (max-width: 750px) {
+    #content {
+        width: 90%;
+        margin: 0px 5%;
+        
+    }
 }
 
 .paragraph {
@@ -111,6 +138,13 @@ p {
     max-height: 200px;
 }
 
+@media screen and (max-width: 450px) {
+    .paragraph img {
+        max-width: 100%;
+        padding-bottom: 10px;
+    }
+}
+
 .paragraph h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -120,18 +154,22 @@ p {
     background-color:var(--colorMain1);
     height: 200px;
     width: 300px;
-    display: inline;
+    display: flex;
     padding: 10px;
-    align-items: center;
-    align-content: center;
+    align-items: stretch;
+    flex-direction: column;
 }
 
+@media screen and (max-width: 450px) {
+    .buttonBox {
+        width: 100%;
+    }
+}
 button {
     background-color:var(--colorHeader);
     padding: 10px;
     width: 92%;
     margin: 10px;
-    align-items: center;
     color:var(--colorText);
     cursor: pointer;
 }
@@ -148,7 +186,15 @@ button {
     height: 100%;
     background-color:var(--colorMain2);
 }
-
+@media screen and (max-width: 750px) {
+    .benefits {
+        float:none;
+        width: 80%;
+        align-self: center;
+        padding: 10%;
+    }
+    
+}
 .benefit-blurb {
     margin-bottom: 32px;
     color:var(--colorText);
@@ -171,6 +217,7 @@ footer {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    color: var(--black);
 }
 
 footer h2 {
